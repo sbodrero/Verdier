@@ -1,0 +1,696 @@
+/*
+ Theme Name:     Maison Verdier
+ Theme URI:      https://www.hangtenmedia.com
+ Description:    Maison Verdier Theme
+ Author:         Hang Ten Media
+ Author URI:     https://www.hangtenmedia.com
+ Template:       Divi
+ Version:        1.0.0
+*/
+ 
+@import url("../Divi/style.css");
+ 
+/* =Theme customization starts here
+------------------------------------------------------- */
+body {
+	background: url('http://www.verdier.mak2com.fr/wp-content/uploads/2018/01/verdier-motif-blanc.png');
+}
+
+#main-header {
+	z-index: 1 !important;
+}
+
+.et_hide_fixed_logo #main-header.et-fixed-header .logo_container {
+	height: 100%;
+	opacity: 1;
+}
+/*
+body.admin-bar.et_fixed_nav #top-header {
+	display: none;
+}*/
+
+body.et_fixed_nav.et_secondary_nav_enabled #main-header {
+	z-index: 99 !important;
+}
+
+#main-header {
+/*    position: fixed;*/
+    background: #fff;
+}
+
+/*
+body.home div#et-main-area {
+    position: absolute;
+    top: 0;
+	width: 100%;
+}
+*/
+body.home #top-menu a {
+    color: #68645e;
+}
+
+body.home .et-fixed-header #top-menu li.current-menu-ancestor>a, .et-fixed-header #top-menu li.current-menu-item>a {
+    color: #FAFAFA !important;
+}
+
+body.home #top-menu .current_page_item a {
+    border-top: 1px solid #FAFAFA;
+    border-bottom: 1px solid #FAFAFA;
+}
+
+body.home #top-menu li.current-menu-item>a
+/*.et-fixed-header #top-menu li.current-menu-item>a*/ {
+    color: #68645e !important;
+    padding: 10px 0 !important;
+}
+
+.et_pb_fullwidth_header_0.et_pb_fullwidth_header .et_pb_fullwidth_header_overlay {
+	background-color: transparent !important;
+}
+
+#et-top-navigation {
+	float: none !important;
+}
+
+.et_pb_fullwidth_header .et_pb_fullwidth_header_container {
+	width: 79% !important;
+	max-width: 79% !important;
+}
+
+#et-main-area {
+	width: 90% !important;
+	margin: 0 auto !important;
+}
+
+@media (max-width: 1200px) {
+    #section-home-products h2 {
+        font-size: 30px;
+    }
+
+    #section-home-products .et_pb_button {
+        font-size: 100%;
+        padding: 10px 20px !important;
+    }
+}
+
+@media (min-width: 981px) {
+    #section-home-lamaison .et_pb_column img {
+        width: 105.3%;
+        max-width: 105.3%;
+    }    
+}
+
+@media (max-width: 980px) {
+    #section-home-products .et_pb_column {
+        width: 100% !important;
+    }
+    
+    #section-home-products h2 {
+        font-size: 30px !important;
+    }
+	
+	#section-home-toute-une-histoire .et-last-child {
+		padding: 0 30px;
+	}
+	
+	.et_pb_gutters1.et_full_width_page.woocommerce-page ul.products li.product {
+		height: auto !important;
+		width: 100% !important;
+		background: #F0F0F0;
+	}
+
+    #section-home-footer > div.et_pb_row.et_pb_row_6 > div.et_pb_column.et_pb_column_1_3.et_pb_column_15.et_pb_css_mix_blend_mode_passthrough p,
+    #section-home-footer > div.et_pb_row.et_pb_row_6 > div.et_pb_column.et_pb_column_1_3.et_pb_column_15.et_pb_css_mix_blend_mode_passthrough img {
+        text-align: center !important;
+        float: none !important;
+        display: contents !important;
+    }
+
+    #section-home-footer .et_pb_column_1_3:first-child p img {
+        float: none !important;
+    }
+	#section-home-footer .one_half:nth-child(2) {
+		margin-right: 2%;
+	}
+	#section-home-footer .one_half:nth-child(2),
+	#section-home-footer .one_half .et_column_last{
+		width: 48%;
+	}
+	#section-home-footer .et_pb_row:nth-child(2) .et_pb_column:nth-child(3) .et_pb_text > :last-child {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+	#section-home-products {
+		padding: 50px;
+	}
+
+    #section-home-products .et_pb_column {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 479px) {
+	#section-home-products .et_pb_column {
+		padding: 70px 0 !important;
+	}
+	
+	a.woocommerce-LoopProduct-link.woocommerce-loop-product__link {
+		display: block;
+		width: 100% !important;
+	}
+
+	.et_pb_gutters1.et_full_width_page.woocommerce-page ul.products li.product:nth-child(4n+3) a.woocommerce-LoopProduct-link:nth-child(1) .absolute,
+	.et_pb_gutters1.et_full_width_page.woocommerce-page ul.products li.product:nth-child(4n+3) a.woocommerce-LoopProduct-link:nth-child(3) .absolute,
+	.et_pb_gutters1.et_full_width_page.woocommerce-page ul.products li.product:nth-child(4n+4) a.woocommerce-LoopProduct-link:nth-child(1) .absolute,
+	.et_pb_gutters1.et_full_width_page.woocommerce-page ul.products li.product:nth-child(4n+4) a.woocommerce-LoopProduct-link:nth-child(3) .absolute {
+		position: relative !important;
+		width: 100% !important;
+	}
+	
+	a.woocommerce-LoopProduct-link.woocommerce-loop-product__link {
+		display: block !important;
+	}
+	
+	.quick-view-overlay {
+		width: 100% !important;
+	}
+	#section-home-footer .et_pb_row:nth-child(2) .et_pb_column:nth-child(3) .et_pb_text .one_half:nth-child(1) {
+   		display: block !important;
+    	margin-top: 30px;
+	}
+
+	#section-home-footer .one_half:nth-child(2) {
+   		padding-top: 30px !important;
+	}
+
+	#section-home-footer .et_column_last a {
+    	padding-left: 0 !important;
+	}
+}
+
+@media (max-width: 386px) {
+	#section-home-footer .et_pb_column_1_3:last-child .one_half {
+		width: 100% !important;
+		text-align: center;
+		float: none !important;
+	}
+
+	#section-home-footer .et_pb_column_1_3:last-child .one_half h3,
+	#section-home-footer .et_pb_text_align_right {
+		text-align: center !important;
+	}
+	
+	#section-home-footer .et_column_last a {
+		border-left: 0 !important;
+	}
+}
+
+#section-home-lamaison .et_pb_text_6 {
+    background: transparent !important;
+}
+
+#section-home-products .et_pb_column {
+	padding: 70px;
+}
+
+#section-home-toute-une-histoire .et_pb_column_4 {
+    background: none;
+}
+
+#section-home-toute-une-histoire .et_pb_gutters1 .et_pb_column_1_3 {
+    padding: 0;
+}
+
+#section-home-toute-une-histoire .et_pb_image_3 {
+    height: 500px;
+}
+
+#section-home-toute-une-histoire .et_pb_text_3 h2 {
+	color: #F3F3F3;
+}
+
+#section-home-about-us .et_pb_column {
+    padding: 0px 30px;
+}
+
+#section-home-footer h3 {
+	font-size: 16px !important;
+}
+
+#section-home-footer p {
+	font-weight: normal !important;
+}
+
+#section-home-footer a,
+#section-home-footer p {
+	color: #fff !important;
+}
+
+#section-home-footer .et_column_last a {
+	display: block !important;
+	border-left: 3px solid #fff;
+	padding-left: 10px;
+}
+
+#section-home-footer .one_half:nth-child(2) {
+    padding-top: 50px;
+}
+
+body:not(.home) #section-home-footer {
+    background-image: url(http://www.verdier.mak2com.fr/wp-content/uploads/2018/01/VERDIER_MOTIF.png)!important;
+    padding: 0;
+}
+
+body:not(.home) #section-home-footer .et_pb_row {
+    padding: 0;
+}
+
+body:not(.home) #section-home-footer .et_pb_column_1_3:last-child {
+    padding-top: 15px;
+}
+
+body:not(.home) #section-home-footer .et_pb_column_1_3:first-child {
+    padding-top: 50px;
+}
+
+body:not(.home) #section-home-footer .et_pb_row {
+    padding: 27px 0 27px 0 !important;
+}
+
+body:not(.home) #section-home-footer .et_pb_column_1_3:nth-child(2) .et_pb_module{
+    width: 70%;
+    margin: 0 auto;
+}
+
+body:not(.home) #section-home-footer .et_pb_row:nth-child(1),
+.woocommerce-checkout #section-home-footer .et_pb_row:nth-child(1),
+.woocommerce-cart #section-home-footer .et_pb_row:nth-child(1) {
+    background: #2E2926;
+}
+
+body:not(.home) #section-home-footer .et_pb_row:nth-child(1) .et_pb_image,
+.woocommerce-checkout #section-home-footer .et_pb_row:nth-child(1) .et_pb_image,
+.woocommerce-cart #section-home-footer .et_pb_row:nth-child(1) .et_pb_image {
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 10px; 
+}
+
+.woocommerce-checkout #section-home-footer .et_pb_row:nth-child(2),
+.woocommerce-cart #section-home-footer .et_pb_row:nth-child(2) {
+	display: none;
+}
+
+.woocommerce-checkout #section-home-footer,
+.woocommerce-cart #section-home-footer {
+	padding: 0 !important;
+}
+
+a.xoo-qv-button {
+	position: absolute;
+	top: 45%;
+	left: 25%;
+	z-index: 99999;
+	display: none;
+}
+
+a.xoo-qv-button:hover {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+.woocommerce ul.products li:hover > a.xoo-qv-button {
+    display: block !important;
+
+}
+
+.woocommerce ul.products li:hover > .et_overlay {
+	background: rgba(255,255,255,.9) !important;
+	display: block !important;
+}
+
+.et_overlay:before {
+	display: none !important;
+}
+
+.woocommerce ul.products li:hover:hover > .quick-view-overlay {
+	display:block !important;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	border:1px solid #e5e5e5;
+	background:rgba(255,255,255,.9);
+	-webkit-transition:all .3s;
+	-moz-transition:all .3s;
+	transition:all .3s;
+	-webkit-transform:translate3d(0,0,0);
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	backface-visibility:hidden;
+	-o-backface-visibility:hidden;
+}
+
+/*
+.woocommerce ul.products li:hover .xoo-qv-button {
+	display: block;
+}
+*/
+
+.quick-view-overlay {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(255,255,255,0.9) !important;
+	display: none;
+}
+
+a.woocommerce-LoopProduct-link.woocommerce-loop-product__link {
+    display: inline-block;
+}
+
+.et_pb_gutters1.et_full_width_page.woocommerce-page ul.products li.product {
+    width: 48%;
+	height: auto; /*233px;*/
+	background: #F0F0F0;
+}
+
+a.woocommerce-LoopProduct-link.woocommerce-loop-product__link {
+    display: table-cell;
+    width: 50%;
+    float: none;
+    height: 100%;
+    vertical-align: middle;
+}
+
+a.woocommerce-LoopProduct-link.woocommerce-loop-product__link:nth-child(3) {
+	background: #F0F0F0;
+	text-align: left;
+	padding: 20px;
+}
+
+ul.products li {
+    display: table;
+}
+
+.woocommerce ul.products li.product a img {
+	margin: 0 !important;
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.woocommerce ul.products li.product .price {
+	font-weight: bold;
+}
+
+.et_pb_gutters1.et_full_width_page.woocommerce-page ul.products li.product:nth-child(4n+3) a.woocommerce-LoopProduct-link:nth-child(1),
+.et_pb_gutters1.et_full_width_page.woocommerce-page ul.products li.product:nth-child(4n+3) a.woocommerce-LoopProduct-link:nth-child(3),
+.et_pb_gutters1.et_full_width_page.woocommerce-page ul.products li.product:nth-child(4n+4) a.woocommerce-LoopProduct-link:nth-child(1),
+.et_pb_gutters1.et_full_width_page.woocommerce-page ul.products li.product:nth-child(4n+4) a.woocommerce-LoopProduct-link:nth-child(3) {
+    float: right !important;
+    height: 100% !important;
+    box-sizing: border-box;
+	text-align: right;
+	padding: 0 !important;
+}
+
+.et_pb_gutters1.et_full_width_page.woocommerce-page ul.products li.product:nth-child(4n+3) .quick-view-overlay,
+.et_pb_gutters1.et_full_width_page.woocommerce-page ul.products li.product:nth-child(4n+3) .quick-view-overlay,
+.et_pb_gutters1.et_full_width_page.woocommerce-page ul.products li.product:nth-child(4n+4) .quick-view-overlay,
+.et_pb_gutters1.et_full_width_page.woocommerce-page ul.products li.product:nth-child(4n+4) .quick-view-overlay {
+	right: 0 !important;
+	left: auto !important;
+}
+
+
+.et_pb_gutters1.et_full_width_page.woocommerce-page ul.products li.product:nth-child(4n+3) .xoo-qv-button,
+.et_pb_gutters1.et_full_width_page.woocommerce-page ul.products li.product:nth-child(4n+3) .xoo-qv-button,
+.et_pb_gutters1.et_full_width_page.woocommerce-page ul.products li.product:nth-child(4n+4) .xoo-qv-button,
+.et_pb_gutters1.et_full_width_page.woocommerce-page ul.products li.product:nth-child(4n+4) .xoo-qv-button {
+    left: 30%;
+}
+
+.container-shop-categories {
+    background: #423D39;
+	padding: 50px 50px 25px 50px;
+}
+
+.container-shop-categories .et_pb_column {
+    display: inline-block;
+    float: none !important;
+	text-transform: uppercase;
+	font-size: 20px;
+	width: 24.9%;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.table {
+    display: table;
+	height: 100%;
+	width: 100%;
+}
+
+.table-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.table a,
+.img-cat {
+    height: 70px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.img-cat {
+    width: 70px;
+	background-size: contain !important;	
+}
+
+.img-cat-chocolats {
+    background: url("http://www.verdier.mak2com.fr/wp-content/uploads/2018/01/chocolat.png") no-repeat center center;
+}
+
+.img-cat-tous-produits {
+	background: url("http://www.verdier.mak2com.fr/wp-content/uploads/2018/01/LOGO-FIGURATIF-BLANC_VERDIER.png") no-repeat center center;
+}
+
+.img-cat-confiseries {
+	background: url("http://www.verdier.mak2com.fr/wp-content/uploads/2018/01/VERDIER_PICTOS_BRUNO.png") no-repeat center center;
+}
+
+.img-cat-raisins-dores {
+	background: url("http://www.verdier.mak2com.fr/wp-content/uploads/2018/01/raisinsdorÃ©s.png") no-repeat center center;
+}
+
+.et_header_style_left #et-top-navigation {
+	padding-left: 399px !important;
+}
+
+/*
+.home footer {
+	display: none !important;
+}
+*/
+
+div#section-home-footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.from {
+	color: #333 !important;
+}
+
+.woocommerce button.button.alt.disabled {
+    background: #ececec;
+}
+
+li#tab-title-additional_information,
+li#tab-title-reviews {
+    display: none;
+}
+
+.absolute {
+    height: 100%;
+    position: absolute;
+    width: 50%;
+    padding: 20px;
+}
+
+.hide {
+	display: none !important;
+}
+
+ul.products li.pif-has-gallery a.woocommerce-loop-product__link:hover .wp-post-image--secondary {
+    display: none;
+}
+
+.banner-category {
+	line-height: 0;
+	text-align: center;
+	background: #fff;
+}
+
+.banner-category img {
+	width: 100%;
+}
+
+.banner-category img:nth-child(2) {
+	width: 40%;
+}
+
+body.woocommerce #content-area div.product .woocommerce-tabs ul.tabs, body.woocommerce div.product .woocommerce-tabs ul.tabs,
+body.woocommerce #content-area div.product .woocommerce-tabs .panel, body.woocommerce div.product .woocommerce-tabs .panel,
+p.woocommerce-result-count,
+form.woocommerce-ordering {
+    display: none !important;
+}
+
+
+.tax-product_cat nav.woocommerce-breadcrumb {
+    order: 2;
+    -webkit-order: 2;
+	margin: 20px auto 20px auto;
+	width: 80%;
+}
+
+.tax-product_cat header.woocommerce-products-header {
+    order: 1;
+    -webkit-order: 1;
+}
+
+.tax-product_cat div#left-area {
+    display: -webkit-flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.tax-product_cat form.woocommerce-ordering {
+    -webkit-order: 3;
+    order: 3;
+}
+
+.tax-product_cat ul.products.columns-4 {
+    -webkit-order: 4;
+    order: 4;
+}
+
+
+.tax-product_cat .container {
+    width: 100%;
+    max-width: 100%;
+}
+
+.tax-product_cat ul.products.columns-4 {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1080px;
+}
+
+.tax-product_cat .container-desc {
+    margin: 0 auto;
+    padding: 30px 50px;
+}
+
+.term-confiseries .container-desc {
+	background: #303030;
+    color: #fff;
+}
+
+.term-chocolats .container-desc {
+	background: #D29600;
+    color: #fff;
+}
+
+.term-raisins-dores .container-desc {
+	background: #F0EFEB;
+}
+
+.term-chocolats header.woocommerce-products-header,
+.term-confiseries header.woocommerce-products-header,
+.term-raisins-dores header.woocommerce-products-header {
+	display: block;
+}
+
+/*
+header.woocommerce-products-header {
+	display: none;
+}
+*/
+
+.tax-product_cat .container-img  {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.tax-product_cat .woocommerce-products-header__title.page-title {
+	display: none !important;
+}
+
+sup {
+	font-size: 10px;
+}
+
+#section-home-footer .et_pb_row:nth-child(2) .et_pb_column:nth-child(3) .et_pb_text > :last-child {
+	display: table;
+}
+
+#section-home-footer .et_pb_row:nth-child(2) .et_pb_column:nth-child(3) .et_pb_text .one_half:nth-child(1) {
+	float: none;
+	display: table-cell;
+	vertical-align: middle;
+	padding-right: 10px;
+}
+
+#section-home-footer .et_pb_row:nth-child(2) .et_pb_column:nth-child(3) .et_pb_text .et_column_last {
+	width: auto;
+}
+
+/* === Begin: Set the divi slider height === */
+
+/* Desktop */
+.verdierslider .et_pb_slide .et_pb_container {
+	height: auto !important;
+	min-height: 536px !important;
+}
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+	.verdierslider .et_pb_slide .et_pb_container {
+		height: auto !important;
+		min-height: 536px !important;
+	}
+}
+/* Phone */
+@media only screen and (max-width: 767px) {
+	.verdierslider .et_pb_slide .et_pb_container {
+		height: auto !important;
+		min-height: 536px !important;
+	}
+}
+
+/* Handle padding */
+.verdierslider .et_pb_slide {
+	padding-bottom: 0px !important;
+}
+.verdierslider div.et_pb_slide_description, 
+.verdierslider .et_pb_slider_fullwidth_off div.et_pb_slide_description {
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+/* === End: Set divi slider height === */
